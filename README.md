@@ -1,1 +1,1 @@
-# Amenity: Lifestyle & Fitness
+# Amenity.io
