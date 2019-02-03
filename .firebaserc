@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "amenity-8ad96"
+    "default": "amenity-8ad96",
+    "Amenity": "amenity-8ad96"
   }
 }

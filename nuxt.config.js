@@ -1,6 +1,6 @@
 module.exports = {
   head: {
-    title: 'Nuxt Firebase Auth',
+    title: 'Amenity. . Input Output',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -24,10 +24,7 @@ module.exports = {
         // })
       }
     },
-    extractCSS: true,
-    analyze: {
-      analyzerMode: 'static'
-    }
+    extractCSS: true
   },
   modules: [
     '@nuxtjs/pwa'
@@ -42,9 +39,5 @@ module.exports = {
   css: [
     { src: '~/assets/css/main.css', lang: 'css'},
     { src: '~/assets/css/app.styl', lang: 'styl'}
-  ],
-  vendor: [
-    'firebase',
-    'vuetify'
   ]
 }
