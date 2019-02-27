@@ -1,23 +1,22 @@
 <template lang="pug">
   v-layout(justify-center align-center)
     v-flex(xs12 sm8)
-        div.mt-5
-          div(v-if="!$store.state.user")
-            login-form
-          div(v-else class="flexWrapper align-center")
-            h4 You're logged in!
-            v-btn(color="secondary" icon)
-              v-icon check_circle
+      div(v-if="!$store.state.user")
+        landing
+      div(v-else)
+        authenticated
   </v-layout>
 
 </template>
 
 <script>
-import LoginForm from '~/components/LoginForm'
+import Landing from '~/components/Landing'
+import Authenticated from '~/components/Authenticated'
 
 export default {
   components: {
-    LoginForm
+    Landing,
+    Authenticated
   }
 }
 </script>

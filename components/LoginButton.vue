@@ -1,11 +1,5 @@
-<template>
-  <v-layout>
-    <v-flex text-xs-center xs12 sm6 offset-sm3>
-      <h2 class="title">Sign In with Google</h2>
-     <v-btn class="signIn mb-2" primary @click.native="googleSignUp">Google Sign In</v-btn>
-    </v-flex>
-  </v-layout>
-
+<template lang="pug">
+  v-btn.pr-0(class="signIn mb-2" flat dark primary @click.native="googleSignUp") Sign In
 </template>
 
 <script>

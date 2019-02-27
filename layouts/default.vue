@@ -24,7 +24,7 @@
         v-icon menu
       // v-toolbar-title(v-text="title")
       v-toolbar-title.ml-0
-        v-img(:src="require('../assets/title.svg')" width="95")
+        v-img(:src="require('../assets/title.svg')" width="86")
       v-spacer
       div(v-if="user" id="user" class="text-xs-center")
         v-menu(
@@ -46,18 +46,23 @@
                   v-spacer
                   v-list-tile-action
                     v-btn(primary class="mt-2" color="primary" @click.native="logout") Logout 
+      div(v-else)
+        login-button
     //v-content
       v-container(fluid)
         router-view
     v-content
-     v-container(fluid)
       nuxt
-    v-footer(app color="info" dark class="pl-2")
+    //v-footer(app color="info" dark class="pl-2")
       span &copy; 2019
 </template>
 
 <script>
+import LoginButton from '~/components/LoginButton'
 export default {
+  components: {
+    LoginButton
+  },
   data () {
     return {
       drawer: null,

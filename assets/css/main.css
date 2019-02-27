@@ -8,10 +8,6 @@
   transform: translate(10px, 0);
 }
 
-html, body {
-  font-size: 102% !important;
-}
-
 .spinner {
   background-color: #3f51b5 !important;
 }
